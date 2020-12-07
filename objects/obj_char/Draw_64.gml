@@ -6,7 +6,7 @@ if(610 <= x && x <= 1024 && room == room1){
 	draw_text(850, 70, "Press up and enter to go inside");
 }
 
-if(950 <= x && x <= 1470 && room == room2){
+if(950 <= x && x <= 1450 && room == room2){
 	//check: if this text was shown before
 	if(global.swCat == false){
 		draw_sprite_ext(spr_dialogue, -1, 1050, 80, 0.75, 0.75, 0, c_white, 0.8);
@@ -74,4 +74,10 @@ if(global.catNum == 4 && room == room2){
 			y = 1000;
 		}
 	}
+}
+
+if(1450 <= x && x <= 2100 && room == room2){
+	//check: if this text was shown before
+	draw_sprite_ext(spr_exit, -1, 1050, 80, 0.5, 0.5, 0, c_white, 0.8);
+	draw_text(1000, 80, "Exit");
 }

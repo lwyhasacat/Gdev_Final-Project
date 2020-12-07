@@ -32,10 +32,3 @@ if (keyboard_check(vk_up) && hspeed == 0){
 if (keyboard_check(vk_down) && hspeed == 0){
 	sprite_index = char_still_front;
 }
-
-//room change
-if (keyboard_check(vk_down) && keyboard_check(vk_enter) && room == room2){
-	room_goto(room1);
-	x = 800;
-	y = 920;
-}
