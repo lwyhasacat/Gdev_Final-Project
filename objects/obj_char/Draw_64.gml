@@ -77,7 +77,6 @@ if(global.catNum == 4 && room == room2){
 }
 
 if(1450 <= x && x <= 2100 && room == room2){
-	//check: if this text was shown before
 	draw_sprite_ext(spr_exit, -1, 1050, 80, 0.5, 0.5, 0, c_white, 0.8);
 	draw_text(1000, 80, "Exit");
 }
