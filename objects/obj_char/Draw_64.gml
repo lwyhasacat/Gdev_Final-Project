@@ -1,10 +1,16 @@
 draw_set_font(fontcat);
 draw_set_color(c_black);
 
-if(610 <= x && x <= 1024 && room == room1){
+if(610 <= x && x <= 1024 && room == room1 && global.catspr == false){
 	draw_sprite_ext(spr_dialogue, -1, 1050, 80, 0.55, 0.55, 0, c_white, 0.8);
 	draw_text(850, 70, "Press up and enter to go inside");
 }
+
+if(room == room1 && global.catspr == true){
+	draw_sprite_ext(spr_dialogue, -1, 1050, 80, 0.55, 0.55, 0, c_white, 0.8);
+	draw_text(850, 70, "Click on the cats you found...");
+}
+
 
 if(950 <= x && x <= 1450 && room == room2){
 	//check: if this text was shown before
